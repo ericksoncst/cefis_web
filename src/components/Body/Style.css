@@ -3,6 +3,7 @@
     letter-spacing: 1px;
     padding: 65px;
     text-align: center;
+    margin-top: 100px;
 }
 
 .div-body p {
@@ -10,16 +11,63 @@
     margin-bottom: 40px;
 }
 
+.filter {
+    font-size: 30px;
+    padding: 10px;
+    height: 15px;
+    width: 360;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.fas {
+    font-size: 30px;
+}
+
+.div-filter{
+    margin-bottom: 20px;
+    margin-right: 1000px;
+}
+
 .courses-list {
     display: inline-block;
     border: 1px solid #eee;
     box-shadow: 0 2px 2px #cecece;
     width: 400px;
+    height: 350px;
     margin: 20px;
     padding: 20px;
     overflow-x: hidden;
 }
 
+.courses-list a {
+    width: 70%;
+    height: 25px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.courses-list a:hover {
+    width: 70%;
+    height: 25px;
+    font-size: 22px;
+    text-decoration: underline;
+    color: #fff;
+    background-color: #000;
+}
+
+.courses-list img {
+    height: 210px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
 .courses-list p {
     margin: 10px 20px 20px 20px;
+}
+
+.div-loading {
+    font-size: 60px;
+    text-align: center;
+    padding: 300px;
 }

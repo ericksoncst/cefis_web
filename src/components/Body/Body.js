@@ -8,8 +8,13 @@ class Body extends Component {
     
     state = {
         courses: [],
-        isLoaded: false
+        isLoaded: false,
+        search: ''
     }   
+
+    updateSearch(e) {
+        this.setState({search: e.target.value.substr(0,20)});
+    }
 
 
     componentDidMount() {
@@ -30,20 +35,36 @@ class Body extends Component {
 
   render() {
 
-    var { isLoaded, courses } = this.state;
+    let { isLoaded, courses } = this.state;
+    let filteredCourses = courses.filter(
+        (course) => {
+            return course.title.toLowerCase().indexOf(this.state.search.toLocaleLowerCase()) !== -1;
+        }
+    );
 
     if(!isLoaded) {
-        return <div>Loading...</div>
+        return <div className="div-loading">Loading...</div>
+   
     } else {
         return (
             <div className="div-body">
-                <p>Choose one course and improove your skills for free!!</p>
+                <p>Escolha um curso e aumente suas habilidades de graça!!</p>
                 <div>
+
+                    <div className="div-filter">
+                        <i className="fas fa-search"></i>
+                        <input placeholder=" O que está procurando?"
+                        className="filter" type="text" 
+                        value={this.state.search} 
+                        onChange={this.updateSearch.bind(this)}/>
+                    </div>
+
                     <ul>
-                        {courses.map(c => (
+                        {filteredCourses.map(c => (
                             <li className="courses-list" key={c.id}>
-                                <p className="title" >Titulo: {c.title}</p>
+                                <p className="title" >{c.title}</p>
                                 <img className="banner" src={c.banner}></img>
+                                <a>Detalhes do curso</a>
                             </li>
                         ))}
                     </ul>

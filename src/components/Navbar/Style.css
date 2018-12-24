@@ -1,0 +1,16 @@
+.nav-div {
+    height: 85px;
+    width: 100%;
+    background-color: #4682B4;
+    -webkit-box-shadow: -1px 6px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 6px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px 6px 5px 0px rgba(0,0,0,0.75);
+}
+
+.nav-title {
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
+    color: #FFF;
+    float: left;
+    margin: 20px;
+}

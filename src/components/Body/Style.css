@@ -1,0 +1,25 @@
+.div-body {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 1px;
+    padding: 65px;
+    text-align: center;
+}
+
+.div-body p {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.courses-list {
+    display: inline-block;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 2px #cecece;
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.courses-list p {
+    margin: 10px 20px 20px 20px;
+}

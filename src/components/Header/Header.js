@@ -2,10 +2,10 @@ import React from 'react'
 
 import './Style.css';
 
-export default function Navbar() {
+export default function Header() {
   return (
-    <div className="nav-div">
-      <p className="nav-title">
+    <div className="header-div">
+      <p className="header-title">
           E-Courses
       </p>
     </div>

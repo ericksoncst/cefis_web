@@ -1,6 +1,6 @@
 import React, { Component, Fragment} from 'react';
 
-import Navbar from './components/Navbar/Navbar';
+import Header from './components/Header/Header';
 import Body from './components/Body/Body';
 import Footer from './components/Footer/Footer';
 
@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <Navbar />
+        <Header />
         <Body />
         <Footer />
       </Fragment>

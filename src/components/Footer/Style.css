@@ -1,11 +1,20 @@
 .div-footer {
-    height: 80px;
-    width: 100%;
     background-color: #4682B4;
+    height: 60px;
+    width: 100%;
     text-align: center;
-    overflow: hidden;
+    bottom: 0;
+    margin-bottom: 0;
+    position: fixed;
 }
 
 .div-footer p {
-    margin: 30px;
+    padding: 20px;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 1px;
+}
+
+.underline {
+    border: 1px solid black;
+    margin: 20px;
 }

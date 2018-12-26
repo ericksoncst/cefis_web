@@ -7,13 +7,13 @@ Node.js
 
 ## Instruções para rodar o projeto
 
-Depois,instale as dependências do projeto:
+Instale as dependências do projeto:
 
 ```
  npm install
 ```
 
-Depois,de o comando para rodar o projeto:
+Depois,na raiz do projeto,de o comando:
 
 ```
 npm start

@@ -7,6 +7,12 @@ Node.js
 
 ## Instruções para rodar o projeto
 
+Baixe ou clone o projeto:
+
+```
+git clone https://github.com/ericksoncst/cefis_web.git
+```
+
 Instale as dependências do projeto:
 
 ```
